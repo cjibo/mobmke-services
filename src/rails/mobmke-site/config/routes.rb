@@ -1,4 +1,6 @@
 MobmkeSite::Application.routes.draw do
+  resources :meetings
+
   get "home/index"
 
   devise_for :users
