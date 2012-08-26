@@ -22,12 +22,17 @@
     <td><%= meeting.start_time %></td>
     <td><%= meeting.end_time %></td>
     <td><%= link_to 'Show', meeting %></td>
+    <% if can? :update, @meeting %>
     <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>
+    <% end %>
+    <% if can? :destroy, @meeting %>
     <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
-
+<% if can? :new, @meeting %>
 <%= link_to 'New Meeting', new_meeting_path %>
+<% end %>
