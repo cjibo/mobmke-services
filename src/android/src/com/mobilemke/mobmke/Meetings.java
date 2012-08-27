@@ -14,9 +14,9 @@ public class Meetings extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meetings);
 
-        meetingsList = new ListView(getApplicationContext());
-
-        MeetingRetriever retriever = new MeetingRetriever(meetingsList);
+        meetingsList = (ListView)this.findViewById(R.id.meetingsList);
+        
+        MeetingRetriever retriever = new MeetingRetriever(getApplicationContext(), meetingsList);
         retriever.execute();
         
         

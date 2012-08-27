@@ -7,26 +7,27 @@ import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.List;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.ListView;
 
-public class MeetingRetriever extends AsyncTask<Object, Void, List<Meeting>> {
+public class MeetingRetriever extends AsyncTask<Object, Void, ArrayList<Meeting>> {
 	
 	private ListView view;
+	private Context context;
 	
-	public MeetingRetriever(ListView view, MeetingArrayAdapter adapter)
+	public MeetingRetriever(Context context, ListView view)
 	{
+		this.context = context;
 		this.view = view;
 	}
 	@Override
-	protected List<Meeting> doInBackground(Object... params) {
+	protected ArrayList<Meeting> doInBackground(Object... params) {
 		JSONArray jsonArray = null;
 		URL url;
 		HttpURLConnection urlConnection = null;
@@ -49,7 +50,7 @@ public class MeetingRetriever extends AsyncTask<Object, Void, List<Meeting>> {
 		}
 		urlConnection.disconnect();
 		
-		List<Meeting> list = new ArrayList<Meeting>();
+		ArrayList<Meeting> list = new ArrayList<Meeting>();
 		
 		for(int i = 0; i < jsonArray.length(); i++) {
 			Meeting meeting = new Meeting();
@@ -76,9 +77,11 @@ public class MeetingRetriever extends AsyncTask<Object, Void, List<Meeting>> {
 	}
 
 	@Override
-	protected void onPostExecute(List<Meeting> result)
+	protected void onPostExecute(ArrayList<Meeting> result)
 	{
-		
+		MeetingArrayAdapter adapter = new MeetingArrayAdapter(this.context, 1, result);
+		this.view.setAdapter(adapter);
+		adapter.notifyDataSetChanged();
 		Log.v("Test", "results stop point");
 	}
 }

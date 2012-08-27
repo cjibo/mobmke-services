@@ -14,40 +14,41 @@ public class MeetingArrayAdapter extends ArrayAdapter<Meeting> {
 
 	int resource;
 	ArrayList<Meeting> items;
+	Context context;
 	
 	public MeetingArrayAdapter(Context context, int resource, ArrayList<Meeting> items) {
 		super(context, resource, items);
 		this.resource = resource;
 		this.items = items;
+		this.context = context;
 	}
 
 	@Override
     public View getView(int position, View convertView, ViewGroup parent)
     {
-		LinearLayout itemView;
 		
+		View v = convertView;
 		Meeting meeting = getItem(position);
 		
 		if (convertView == null)
 		{
-			itemView = new LinearLayout(getContext());
 			String inflater = Context.LAYOUT_INFLATER_SERVICE;
 			LayoutInflater vi;
 			vi = (LayoutInflater)getContext().getSystemService(inflater);
-			vi.inflate(resource, itemView, true);
+			v = vi.inflate(R.layout.meeting_item, null);
 		} else {
-			itemView = (LinearLayout)convertView;
+			v = (LinearLayout)convertView;
 		}
 		
-		TextView startText = (TextView)itemView.findViewById(R.id.txtStart);
-		TextView endText = (TextView)itemView.findViewById(R.id.txtEnd);
-		TextView titleText = (TextView)itemView.findViewById(R.id.txtTitle);
+		TextView startText = (TextView)v.findViewById(R.id.txtStart);
+		TextView endText = (TextView)v.findViewById(R.id.txtEnd);
+		TextView titleText = (TextView)v.findViewById(R.id.txtTitle);
 		
-		startText.setText(meeting.getStart().toString());
-		endText.setText(meeting.getEnd().toString());
+		//startText.setText(meeting.getStart().toString());
+		//endText.setText(meeting.getEnd().toString());
 		titleText.setText(meeting.getTitle());
 		
-		return itemView;
+		return v;
 		
     }
 }
