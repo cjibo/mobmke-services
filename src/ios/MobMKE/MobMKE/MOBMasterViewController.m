@@ -29,11 +29,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    // Configure URL
+    NSString *urlString = [NSString stringWithFormat:@"http://cryptic-hamlet-3757.herokuapp.com/meetings.json"];
+    
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    // Create NSdata from url contents
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    
+    // Configure 
+    NSError *error;
+    
+    _objects = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    
+    
+    NSLog(@"%@", _objects);
+    
+    // Removing edit button for now.
+	// Do any additional setup after loading the view, typically from a nib.
+    // self.navigationItem.leftBarButtonItem = self.editButtonItem;
+
+    // Removing Add button for now.
+    // UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    // self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (MOBDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
@@ -52,15 +71,6 @@
     }
 }
 
-- (void)insertNewObject:(id)sender
-{
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-}
 
 #pragma mark - Table View
 
@@ -77,9 +87,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-
-    NSDate *object = [_objects objectAtIndex:indexPath.row];
-    cell.textLabel.text = [object description];
+    NSDictionary *object = [_objects objectAtIndex:indexPath.row];
+    cell.textLabel.text = [object objectForKey:@"title"];
     return cell;
 }
 
@@ -92,7 +101,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
+        //[_objects removeObjectForKey:(NSInteger)indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
@@ -118,17 +127,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSDate *object = [_objects objectAtIndex:indexPath.row];
-        self.detailViewController.detailItem = object;
+        // NSString *object = [_objects objectAtIndex:indexPath.row];
+        // self.detailViewController.detailItem = object;
     }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = [_objects objectAtIndex:indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        // NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        // NSDate *object = [_objects objectAtIndex:indexPath.row];
+        // [[segue destinationViewController] setDetailItem:object];
     }
 }
 
