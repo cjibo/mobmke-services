@@ -44,8 +44,9 @@ public class MeetingArrayAdapter extends ArrayAdapter<Meeting> {
 		TextView endText = (TextView)v.findViewById(R.id.txtEnd);
 		TextView titleText = (TextView)v.findViewById(R.id.txtTitle);
 		
-		//startText.setText(meeting.getStart().toString());
-		//endText.setText(meeting.getEnd().toString());
+		startText.setText(meeting.getStart().toString());
+		endText.setText(meeting.getEnd().toString());
+		v.setTag(meeting.getId());	
 		titleText.setText(meeting.getTitle());
 		
 		return v;
