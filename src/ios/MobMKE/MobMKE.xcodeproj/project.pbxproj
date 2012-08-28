@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6300C52515EC639000EC5234 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6300C52415EC639000EC5234 /* UIKit.framework */; };
+		6300C52715EC639000EC5234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6300C52615EC639000EC5234 /* Foundation.framework */; };
+		6300C52915EC639000EC5234 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6300C52815EC639000EC5234 /* CoreGraphics.framework */; };
+		6300C52F15EC639000EC5234 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6300C52D15EC639000EC5234 /* InfoPlist.strings */; };
+		6300C53115EC639000EC5234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300C53015EC639000EC5234 /* main.m */; };
+		6300C53515EC639000EC5234 /* MOBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300C53415EC639000EC5234 /* MOBAppDelegate.m */; };
+		6300C53815EC639000EC5234 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6300C53615EC639000EC5234 /* MainStoryboard_iPhone.storyboard */; };
+		6300C53B15EC639000EC5234 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6300C53915EC639000EC5234 /* MainStoryboard_iPad.storyboard */; };
+		6300C53E15EC639000EC5234 /* MOBMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300C53D15EC639000EC5234 /* MOBMasterViewController.m */; };
+		6300C54115EC639000EC5234 /* MOBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300C54015EC639000EC5234 /* MOBDetailViewController.m */; };
+		6300C54915EC639000EC5234 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6300C54815EC639000EC5234 /* SenTestingKit.framework */; };
+		6300C54A15EC639000EC5234 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6300C52415EC639000EC5234 /* UIKit.framework */; };
+		6300C54B15EC639000EC5234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6300C52615EC639000EC5234 /* Foundation.framework */; };
+		6300C55315EC639000EC5234 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6300C55115EC639000EC5234 /* InfoPlist.strings */; };
+		6300C55615EC639000EC5234 /* MobMKETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300C55515EC639000EC5234 /* MobMKETests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6300C54C15EC639000EC5234 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6300C51715EC639000EC5234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6300C51F15EC639000EC5234;
+			remoteInfo = MobMKE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6300C52015EC639000EC5234 /* MobMKE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobMKE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6300C52415EC639000EC5234 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6300C52615EC639000EC5234 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6300C52815EC639000EC5234 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6300C52C15EC639000EC5234 /* MobMKE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobMKE-Info.plist"; sourceTree = "<group>"; };
+		6300C52E15EC639000EC5234 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6300C53015EC639000EC5234 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6300C53215EC639000EC5234 /* MobMKE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobMKE-Prefix.pch"; sourceTree = "<group>"; };
+		6300C53315EC639000EC5234 /* MOBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOBAppDelegate.h; sourceTree = "<group>"; };
+		6300C53415EC639000EC5234 /* MOBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBAppDelegate.m; sourceTree = "<group>"; };
+		6300C53715EC639000EC5234 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		6300C53A15EC639000EC5234 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		6300C53C15EC639000EC5234 /* MOBMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOBMasterViewController.h; sourceTree = "<group>"; };
+		6300C53D15EC639000EC5234 /* MOBMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBMasterViewController.m; sourceTree = "<group>"; };
+		6300C53F15EC639000EC5234 /* MOBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MOBDetailViewController.h; sourceTree = "<group>"; };
+		6300C54015EC639000EC5234 /* MOBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBDetailViewController.m; sourceTree = "<group>"; };
+		6300C54715EC639000EC5234 /* MobMKETests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobMKETests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6300C54815EC639000EC5234 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6300C55015EC639000EC5234 /* MobMKETests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobMKETests-Info.plist"; sourceTree = "<group>"; };
+		6300C55215EC639000EC5234 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6300C55415EC639000EC5234 /* MobMKETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobMKETests.h; sourceTree = "<group>"; };
+		6300C55515EC639000EC5234 /* MobMKETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobMKETests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6300C51D15EC639000EC5234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6300C52515EC639000EC5234 /* UIKit.framework in Frameworks */,
+				6300C52715EC639000EC5234 /* Foundation.framework in Frameworks */,
+				6300C52915EC639000EC5234 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6300C54315EC639000EC5234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6300C54915EC639000EC5234 /* SenTestingKit.framework in Frameworks */,
+				6300C54A15EC639000EC5234 /* UIKit.framework in Frameworks */,
+				6300C54B15EC639000EC5234 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6300C51515EC639000EC5234 = {
+			isa = PBXGroup;
+			children = (
+				6300C52A15EC639000EC5234 /* MobMKE */,
+				6300C54E15EC639000EC5234 /* MobMKETests */,
+				6300C52315EC639000EC5234 /* Frameworks */,
+				6300C52115EC639000EC5234 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6300C52115EC639000EC5234 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6300C52015EC639000EC5234 /* MobMKE.app */,
+				6300C54715EC639000EC5234 /* MobMKETests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6300C52315EC639000EC5234 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6300C52415EC639000EC5234 /* UIKit.framework */,
+				6300C52615EC639000EC5234 /* Foundation.framework */,
+				6300C52815EC639000EC5234 /* CoreGraphics.framework */,
+				6300C54815EC639000EC5234 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6300C52A15EC639000EC5234 /* MobMKE */ = {
+			isa = PBXGroup;
+			children = (
+				6300C53315EC639000EC5234 /* MOBAppDelegate.h */,
+				6300C53415EC639000EC5234 /* MOBAppDelegate.m */,
+				6300C53615EC639000EC5234 /* MainStoryboard_iPhone.storyboard */,
+				6300C53915EC639000EC5234 /* MainStoryboard_iPad.storyboard */,
+				6300C53C15EC639000EC5234 /* MOBMasterViewController.h */,
+				6300C53D15EC639000EC5234 /* MOBMasterViewController.m */,
+				6300C53F15EC639000EC5234 /* MOBDetailViewController.h */,
+				6300C54015EC639000EC5234 /* MOBDetailViewController.m */,
+				6300C52B15EC639000EC5234 /* Supporting Files */,
+			);
+			path = MobMKE;
+			sourceTree = "<group>";
+		};
+		6300C52B15EC639000EC5234 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6300C52C15EC639000EC5234 /* MobMKE-Info.plist */,
+				6300C52D15EC639000EC5234 /* InfoPlist.strings */,
+				6300C53015EC639000EC5234 /* main.m */,
+				6300C53215EC639000EC5234 /* MobMKE-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6300C54E15EC639000EC5234 /* MobMKETests */ = {
+			isa = PBXGroup;
+			children = (
+				6300C55415EC639000EC5234 /* MobMKETests.h */,
+				6300C55515EC639000EC5234 /* MobMKETests.m */,
+				6300C54F15EC639000EC5234 /* Supporting Files */,
+			);
+			path = MobMKETests;
+			sourceTree = "<group>";
+		};
+		6300C54F15EC639000EC5234 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6300C55015EC639000EC5234 /* MobMKETests-Info.plist */,
+				6300C55115EC639000EC5234 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6300C51F15EC639000EC5234 /* MobMKE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6300C55915EC639000EC5234 /* Build configuration list for PBXNativeTarget "MobMKE" */;
+			buildPhases = (
+				6300C51C15EC639000EC5234 /* Sources */,
+				6300C51D15EC639000EC5234 /* Frameworks */,
+				6300C51E15EC639000EC5234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobMKE;
+			productName = MobMKE;
+			productReference = 6300C52015EC639000EC5234 /* MobMKE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6300C54615EC639000EC5234 /* MobMKETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6300C55C15EC639000EC5234 /* Build configuration list for PBXNativeTarget "MobMKETests" */;
+			buildPhases = (
+				6300C54215EC639000EC5234 /* Sources */,
+				6300C54315EC639000EC5234 /* Frameworks */,
+				6300C54415EC639000EC5234 /* Resources */,
+				6300C54515EC639000EC5234 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6300C54D15EC639000EC5234 /* PBXTargetDependency */,
+			);
+			name = MobMKETests;
+			productName = MobMKETests;
+			productReference = 6300C54715EC639000EC5234 /* MobMKETests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6300C51715EC639000EC5234 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MOB;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Curtis Allen Gibeaut Jr";
+			};
+			buildConfigurationList = 6300C51A15EC639000EC5234 /* Build configuration list for PBXProject "MobMKE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6300C51515EC639000EC5234;
+			productRefGroup = 6300C52115EC639000EC5234 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6300C51F15EC639000EC5234 /* MobMKE */,
+				6300C54615EC639000EC5234 /* MobMKETests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6300C51E15EC639000EC5234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6300C52F15EC639000EC5234 /* InfoPlist.strings in Resources */,
+				6300C53815EC639000EC5234 /* MainStoryboard_iPhone.storyboard in Resources */,
+				6300C53B15EC639000EC5234 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6300C54415EC639000EC5234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6300C55315EC639000EC5234 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6300C54515EC639000EC5234 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6300C51C15EC639000EC5234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6300C53115EC639000EC5234 /* main.m in Sources */,
+				6300C53515EC639000EC5234 /* MOBAppDelegate.m in Sources */,
+				6300C53E15EC639000EC5234 /* MOBMasterViewController.m in Sources */,
+				6300C54115EC639000EC5234 /* MOBDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6300C54215EC639000EC5234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6300C55615EC639000EC5234 /* MobMKETests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6300C54D15EC639000EC5234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6300C51F15EC639000EC5234 /* MobMKE */;
+			targetProxy = 6300C54C15EC639000EC5234 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6300C52D15EC639000EC5234 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6300C52E15EC639000EC5234 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6300C53615EC639000EC5234 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6300C53715EC639000EC5234 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6300C53915EC639000EC5234 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6300C53A15EC639000EC5234 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		6300C55115EC639000EC5234 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6300C55215EC639000EC5234 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6300C55715EC639000EC5234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6300C55815EC639000EC5234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6300C55A15EC639000EC5234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobMKE/MobMKE-Prefix.pch";
+				INFOPLIST_FILE = "MobMKE/MobMKE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6300C55B15EC639000EC5234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobMKE/MobMKE-Prefix.pch";
+				INFOPLIST_FILE = "MobMKE/MobMKE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6300C55D15EC639000EC5234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MobMKE.app/MobMKE";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobMKE/MobMKE-Prefix.pch";
+				INFOPLIST_FILE = "MobMKETests/MobMKETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6300C55E15EC639000EC5234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MobMKE.app/MobMKE";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MobMKE/MobMKE-Prefix.pch";
+				INFOPLIST_FILE = "MobMKETests/MobMKETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6300C51A15EC639000EC5234 /* Build configuration list for PBXProject "MobMKE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6300C55715EC639000EC5234 /* Debug */,
+				6300C55815EC639000EC5234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6300C55915EC639000EC5234 /* Build configuration list for PBXNativeTarget "MobMKE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6300C55A15EC639000EC5234 /* Debug */,
+				6300C55B15EC639000EC5234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6300C55C15EC639000EC5234 /* Build configuration list for PBXNativeTarget "MobMKETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6300C55D15EC639000EC5234 /* Debug */,
+				6300C55E15EC639000EC5234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6300C51715EC639000EC5234 /* Project object */;
+}
