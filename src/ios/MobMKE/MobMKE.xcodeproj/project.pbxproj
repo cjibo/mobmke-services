@@ -22,6 +22,7 @@
 		6300C54B15EC639000EC5234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6300C52615EC639000EC5234 /* Foundation.framework */; };
 		6300C55315EC639000EC5234 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6300C55115EC639000EC5234 /* InfoPlist.strings */; };
 		6300C55615EC639000EC5234 /* MobMKETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6300C55515EC639000EC5234 /* MobMKETests.m */; };
+		63B23BD915EDC40200D462DB /* MOBMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B23BD815EDC40200D462DB /* MOBMeeting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		6300C55215EC639000EC5234 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6300C55415EC639000EC5234 /* MobMKETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobMKETests.h; sourceTree = "<group>"; };
 		6300C55515EC639000EC5234 /* MobMKETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobMKETests.m; sourceTree = "<group>"; };
+		63B23BD715EDC40200D462DB /* MOBMeeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOBMeeting.h; sourceTree = "<group>"; };
+		63B23BD815EDC40200D462DB /* MOBMeeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOBMeeting.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				6300C53F15EC639000EC5234 /* MOBDetailViewController.h */,
 				6300C54015EC639000EC5234 /* MOBDetailViewController.m */,
 				6300C52B15EC639000EC5234 /* Supporting Files */,
+				63B23BD715EDC40200D462DB /* MOBMeeting.h */,
+				63B23BD815EDC40200D462DB /* MOBMeeting.m */,
 			);
 			path = MobMKE;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				6300C53515EC639000EC5234 /* MOBAppDelegate.m in Sources */,
 				6300C53E15EC639000EC5234 /* MOBMasterViewController.m in Sources */,
 				6300C54115EC639000EC5234 /* MOBDetailViewController.m in Sources */,
+				63B23BD915EDC40200D462DB /* MOBMeeting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +461,7 @@
 				6300C55B15EC639000EC5234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6300C55C15EC639000EC5234 /* Build configuration list for PBXNativeTarget "MobMKETests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +470,7 @@
 				6300C55E15EC639000EC5234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
